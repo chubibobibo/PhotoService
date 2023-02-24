@@ -1,11 +1,10 @@
 .navbar {
-  padding: 20px;
+  padding: 1wrem;
   display: flex;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-
+  max-width: 100vw;
+  margin: 2rem auto;
+  /* border-bottom: 1px solid #f2f2f2; */
 }
 
 .navbarLinks {
@@ -23,6 +22,13 @@
 }
 
 .navbar a:hover {
-  color: #f2f2f2;
+  color: #677bd8;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateX(-15rem);
+
 }

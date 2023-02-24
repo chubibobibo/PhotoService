@@ -10,7 +10,7 @@
 
 }
 
-h1 {
+.title {
     font-size: 5rem;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ p {
     justify-content: center;
     margin: auto;
     padding-top: 0.5rem;
-    transform: translateY(-15rem);
+    transform: translateY(-13rem);
 
     color: aliceblue;
 }
