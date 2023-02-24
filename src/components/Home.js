@@ -1,14 +1,17 @@
 import React from 'react';
 import classes from './Home.module.css'
-import Navbar from './Navbar'
+import MyNavbar from './Navbar'
 
 function Home() {
     return (
-        <main className={classes.mainpage}>
-            <Navbar />
-            <h1>Charles Cantin</h1>
-            <p>Photographe</p>
-        </main >
+        <div>
+            <MyNavbar />
+            <main className={classes.mainpage}>
+                <h1 className={classes.title}>Charles Cantin</h1>
+                <p>Photographe</p>
+            </main >
+        </div>
+
     )
 }
 

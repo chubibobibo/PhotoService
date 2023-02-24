@@ -4,16 +4,14 @@
 }
 
 .allRates {
-    padding: 10px 16px;
-    margin: 20px 0;
+    max-width: 30rem;
+    margin: 2rem auto;
+    padding: 1rem;
     border: 1px solid rgb(206, 203, 203);
-
 }
 
-.allRates {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
+.allRates h5 {
+    margin-top: 0.5rem;
 }
 
 .allRates:hover {
