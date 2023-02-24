@@ -20,8 +20,8 @@ const GalleryDisplay = (props) => {
                             </Col>
 
                             <Card.Body >
-                                <Col className="col-8 mx-auto d-flex justify-content-center align-items-center">
-                                    <Card.Title><h1>{allData.category}</h1></Card.Title>
+                                <Col className="col-8 mx-auto d-flex justify-content-center">
+                                    <Card.Title className="d-flex align-items-center"><h1>{allData.category}</h1></Card.Title>
                                 </Col>
                             </Card.Body>
                         </Card>
