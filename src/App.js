@@ -1,14 +1,11 @@
 import Home from './components/Home.js'
-import { BrowserRouter as Router, Routes, Route, Links } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Rates from './components/Rates'
 import Gallery from './components/Gallery'
+import Details from './components/Details'
+//bootstrap
 
-import Card from 'react-bootstrap/Card';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 import './App.css';
 
@@ -21,6 +18,7 @@ function App() {
             <Route exact path='/' element=<Home /> />
             <Route exact path='/rates' element=<Rates /> />
             <Route exact path='/gallery' element=<Gallery /> />
+            <Route exact path='/gallery/:category' element=<Details /> />
           </Routes>
         </div>
       </div>
