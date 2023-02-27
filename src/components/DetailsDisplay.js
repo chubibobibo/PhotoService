@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './DetailsDisplay.css'
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
@@ -8,6 +9,9 @@ import Col from 'react-bootstrap/Col';
 import { useParams } from 'react-router-dom'
 
 
+import Carousel from 'react-bootstrap/Carousel';
+
+
 const DetailsDisplay = (props) => {
     const { category } = useParams()
     return (
@@ -15,6 +19,25 @@ const DetailsDisplay = (props) => {
             <Container>
                 <Row>
                     <h1>{category.toUpperCase()}</h1>
+                    <Carousel fade className='mb-4'>
+                        {props.categories.map(carouselPhoto =>
+                            <Carousel.Item key={carouselPhoto.id}>
+                                <div className='list'>
+                                    <img
+                                        className="d-block w-100 img-fluid"
+                                        src={carouselPhoto.url}
+                                        alt="First slide" />
+                                    <Carousel.Caption>
+                                        <h3>First slide label</h3>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </Carousel.Caption>
+                                </div>
+                            </Carousel.Item>
+                        )}
+                    </Carousel>
+
+                    <span className='border border-1'></span>
+
                     <Col className="d-flex flex-wrap justify-content-center">
                         {props.categories.map(mappedCat =>
                             <div key={mappedCat.id}>
@@ -26,9 +49,13 @@ const DetailsDisplay = (props) => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 }
+
+
+
+
 
 export default DetailsDisplay;
 

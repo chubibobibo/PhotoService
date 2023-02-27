@@ -44,7 +44,7 @@ const GalleryDisplay = (props) => {
                                     <MDBCardText>
                                         Some quick example text to build on the card title and make up the bulk of the card's content.
                                     </MDBCardText>
-                                    <MDBBtn className='mt-4'>
+                                    <MDBBtn className={classess.bootBtn} >
                                         <Link to={`/gallery/${allData.category}`} className={classess.btnLink}>More Photos
                                         </Link></MDBBtn>
                                 </MDBCardBody>
