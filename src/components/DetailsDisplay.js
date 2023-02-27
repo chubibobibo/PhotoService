@@ -41,7 +41,7 @@ const DetailsDisplay = (props) => {
                     <Col className="d-flex flex-wrap justify-content-center">
                         {props.categories.map(mappedCat =>
                             <div key={mappedCat.id}>
-                                <Card className="mt-3 mx-2 d-flex align-items-start">
+                                <Card className="mt-3 mx-2 d-flex align-items-start" key={mappedCat.id}>
                                     <Card.Img variant="top" src={mappedCat.url} className="img-fluid shadow-4-strong rounded-1" />
                                 </Card>
                             </div>
