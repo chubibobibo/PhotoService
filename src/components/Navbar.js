@@ -11,7 +11,7 @@ const MyNavbar = () => {
         <div>
             <Navbar bg="dark" variant="dark" className='fixed-top'>
                 <Container>
-                    <Navbar.Brand href="/">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/">Charles Cantin</Navbar.Brand>
                     <Nav className="me-auto">
                         <LinkContainer to='/'>
                             <Nav.Link>Home</Nav.Link>
@@ -23,6 +23,9 @@ const MyNavbar = () => {
 
                         <LinkContainer to='/rates'>
                             <Nav.Link>Rates</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to='/contact'>
+                            <Nav.Link>Contact</Nav.Link>
                         </LinkContainer>
                     </Nav>
                 </Container>

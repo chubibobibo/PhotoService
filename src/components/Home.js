@@ -11,16 +11,20 @@ import Col from 'react-bootstrap/Col';
 function Home() {
     return (
         <div>
-            <MyNavbar />
-            <Container style={{ width: 'auto' }}>
-                <main className={classes.mainpage}>
-                    <h1 className={classes.title}>Charles Cantin</h1>
-                    <p>Photographe</p>
-                </main >
-            </Container>
-
-        </div>
-
+            <MyNavbar />s
+            <main className={classes.mainpage}>
+                <Row>
+                    <Col>
+                        <h1 className={classes.title}>Charles Cantin</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p className={classes.sub}>photographe</p>
+                    </Col>
+                </Row>
+            </main >
+        </div >
     )
 }
 

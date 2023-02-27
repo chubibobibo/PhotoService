@@ -31,7 +31,7 @@ const Gallery = () => {
     return (
         <div>
             <MyNavbar />
-            <h1>Gallery</h1>
+            <br />
             <GalleryDisplay images={images} />
         </div>
     );

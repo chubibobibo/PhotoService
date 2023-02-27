@@ -5,13 +5,16 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { useParams } from 'react-router-dom'
 
 
 const DetailsDisplay = (props) => {
+    const { category } = useParams()
     return (
-        <div>
+        <div className='my-5'>
             <Container>
                 <Row>
+                    <h1>{category.toUpperCase()}</h1>
                     <Col className="d-flex flex-wrap justify-content-center">
                         {props.categories.map(mappedCat =>
                             <div key={mappedCat.id}>
