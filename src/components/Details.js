@@ -50,7 +50,7 @@ const Details = () => {
             id: 8,
         },
         {
-            url: 'https://images.unsplash.com/photo-1491013516836-7db643ee125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60',
+            url: 'https://images.unsplash.com/photo-1548897969-80be2924dc9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGJhYnl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60',
             category: 'bébé',
             id: 9,
         },
@@ -80,7 +80,7 @@ const Details = () => {
             id: 14,
         },
         {
-            url: 'https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhbWlseXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60',
+            url: 'https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGZhbWlseXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60',
             category: 'famille',
             id: 15,
         },
@@ -100,12 +100,12 @@ const Details = () => {
             id: 18,
         },
         {
-            url: 'https://plus.unsplash.com/premium_photo-1664372356798-eea9b4782c33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGJhcHRpc218ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60',
+            url: 'https://images.unsplash.com/photo-1464967493814-8aaf8fe4d622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxiYXB0aXNtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60',
             category: 'baptême',
             id: 19,
         },
         {
-            url: 'https://images.unsplash.com/photo-1619553433619-e4e225134558?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGJhcHRpc218ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60',
+            url: 'https://images.unsplash.com/photo-1503463168353-9d883c7f5255?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjEzfHxiYXB0aXNtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60',
             category: 'baptême',
             id: 20,
         },
@@ -144,7 +144,7 @@ const Details = () => {
     return (
         < div >
             <MyNavbar />
-            <h1>Categories</h1>
+            <br />
             <DetailsDisplay categories={categories.filter(newCat => newCat.category === category)} />
         </div >
 

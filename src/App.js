@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Rates from './components/Rates'
 import Gallery from './components/Gallery'
 import Details from './components/Details'
+import Contact from './components/Contact'
 //bootstrap
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route exact path='/rates' element=<Rates /> />
             <Route exact path='/gallery' element=<Gallery /> />
             <Route exact path='/gallery/:category' element=<Details /> />
+            <Route exact path='/contact' element=<Contact /> />
           </Routes>
         </div>
       </div>

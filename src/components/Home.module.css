@@ -1,3 +1,5 @@
+.container {}
+
 .mainpage {
     display: flex;
     flex-direction: column;
@@ -10,21 +12,15 @@
 
 }
 
-/* .title {
+.title {
     font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
     color: aliceblue;
 }
 
-p {
+.subPar {}
+
+.sub {
     font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
     padding-top: 0.5rem;
     color: aliceblue;
-} */
+}
