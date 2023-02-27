@@ -1,6 +1,5 @@
 import Home from './components/Home.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'
 import Rates from './components/Rates'
 import Gallery from './components/Gallery'
 import Details from './components/Details'

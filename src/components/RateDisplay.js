@@ -22,7 +22,7 @@ const RateList = ({ rates }) => {
                 <MDBRow>
                     <MDBCol className="mt-3 d-flex flex-wrap">
                         {rates.map(allRates => (
-                            <MDBCard className='mt-3 mx-auto shadow-5' style={{ width: 600 }}>
+                            <MDBCard className='mt-3 mx-auto shadow-5' style={{ width: 600 }} key={allRates.id}>
                                 <MDBCardBody>
                                     <div key={allRates.id}>
                                         <div>

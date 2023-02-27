@@ -8,7 +8,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
-import { MDBContainer, MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import {
     MDBCard,
     MDBCardBody,
@@ -19,8 +18,6 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-
-
 const GalleryDisplay = (props) => {
     console.log(props)
     return (
@@ -28,30 +25,35 @@ const GalleryDisplay = (props) => {
             <h1 className='mt-5'>GALLERY</h1>
             <Container>
                 {props.images.map(allData =>
-                    <MDBCard style={{ width: 'auto' }} className='mb-4'>
-                        <Row key={allData.key}>
-                            <Col className='col-md-4'>
-                                <MDBCardImage src={allData.image} position='top' alt='...' className='m-2 rounded' />
-                            </Col>
+                    <div key={allData.id}>
+                        <MDBCard style={{ width: 'auto' }} className='mb-4'>
+                            <Row>
+                                <Col className='col-md-4'>
+                                    <MDBCardImage src={allData.image} position='top' alt='...' className='m-2 rounded' />
+                                </Col>
 
-                            <Col className='col-md-8'>
-                                <MDBCardBody>
-                                    <MDBCardTitle>
+                                <Col className='col-md-8'>
+                                    <MDBCardBody>
+                                        {/* <MDBCardTitle> */}
                                         <h2>
                                             {allData.category.toUpperCase()}
                                         </h2>
-                                    </MDBCardTitle>
-                                    <MDBCardText>
-                                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                                    </MDBCardText>
-                                    <MDBBtn className={classess.bootBtn} >
-                                        <Link to={`/gallery/${allData.category}`} className={classess.btnLink}>More Photos
-                                        </Link></MDBBtn>
-                                </MDBCardBody>
-                            </Col>
+                                        {/* </MDBCardTitle> */}
+                                        <MDBCardText>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </MDBCardText>
 
-                        </Row>
-                    </MDBCard>
+                                        <MDBBtn className={classess.bootBtn}>
+                                            <Link to={`/gallery/${allData.category}`} className={classess.btnLink}>More Photos
+                                            </Link>
+                                        </MDBBtn>
+
+                                    </MDBCardBody>
+                                </Col>
+
+                            </Row>
+                        </MDBCard>
+                    </div>
                 )}
             </Container>
         </div >
