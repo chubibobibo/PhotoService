@@ -3,7 +3,6 @@ import classess from './GalleryDisplay.module.css'
 
 //bootstrap
 
-import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -25,26 +24,34 @@ import {
 const GalleryDisplay = (props) => {
     console.log(props)
     return (
-        <div className='mt-5'>
+        <div className="vh-100 d-inline mx-auto">
+            <h1 className='mt-5'>GALLERY</h1>
             <Container>
-                <h1>GALLERY</h1>
                 {props.images.map(allData =>
-                    <Row key={allData.id} className='d-inline'>
-                        <Card style={{ width: 'auto' }} className='mb-5 d-flex flex-row img-fluid shadow-2-strong rounded-4'>
-                            <Col className="col-6 img-fluid">
-                                <Card.Img variant="top" src={allData.image} />
+                    <MDBCard style={{ width: 'auto' }} className='mb-4'>
+                        <Row key={allData.key}>
+                            <Col className='col-md-4'>
+                                <MDBCardImage src={allData.image} position='top' alt='...' className='m-2 rounded' />
                             </Col>
-                            <Card.Body className='d-flex align-items-center'>
-                                <Col className="col-8 mx-auto d-flex justify-content-center">
-                                    <Card.Title className="d-flex align-items-center">
-                                        <Link to={`/gallery/${allData.category}`} className="text-decoration-none">
-                                            <h1>{allData.category.toUpperCase()}</h1>
-                                        </Link>
-                                    </Card.Title>
-                                </Col>
-                            </Card.Body>
-                        </Card>
-                    </Row>
+
+                            <Col className='col-md-8'>
+                                <MDBCardBody>
+                                    <MDBCardTitle>
+                                        <h2>
+                                            {allData.category.toUpperCase()}
+                                        </h2>
+                                    </MDBCardTitle>
+                                    <MDBCardText>
+                                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    </MDBCardText>
+                                    <MDBBtn className='mt-4'>
+                                        <Link to={`/gallery/${allData.category}`} className={classess.btnLink}>More Photos
+                                        </Link></MDBBtn>
+                                </MDBCardBody>
+                            </Col>
+
+                        </Row>
+                    </MDBCard>
                 )}
             </Container>
         </div >
