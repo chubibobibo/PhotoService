@@ -33,7 +33,7 @@ const ContactDisplay = () => {
                                     Pour toute demande, n'hésitez pas à me contacter.
                                 </MDBCardText>
                                 <div>
-                                    <Form >
+                                    <Form netlify>
                                         <Form.Group className="mt-5" controlId="formBasicEmail">
                                             <MDBInput label='Name' id='typeText' type='text' />
                                             <MDBInput label='Email input' id='typeEmail' type='email' />
