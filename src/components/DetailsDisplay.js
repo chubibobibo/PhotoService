@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './DetailsDisplay.css'
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';

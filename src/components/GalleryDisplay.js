@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom';
 import {
     MDBCard,
     MDBCardBody,
-    MDBCardTitle,
     MDBCardText,
     MDBCardImage,
     MDBBtn

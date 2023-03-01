@@ -1,5 +1,3 @@
-.container {}
-
 .mainpage {
     display: flex;
     flex-direction: column;
@@ -17,7 +15,7 @@
     color: aliceblue;
 }
 
-.subPar {}
+
 
 .sub {
     font-size: 3rem;
