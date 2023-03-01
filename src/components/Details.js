@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
-import GalleryDisplay from './GalleryDisplay';
+
 import DetailsDisplay from './DetailsDisplay';
 import MyNavbar from './Navbar'
 
@@ -8,7 +8,7 @@ import MyNavbar from './Navbar'
 const Details = () => {
 
     const { category } = useParams()
-    const [categories, setCategories] = useState([
+    const [categories] = useState([
         {
             url: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60',
             category: 'mariage',
