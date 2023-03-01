@@ -27,10 +27,6 @@ const DetailsDisplay = (props) => {
                                         className="d-block w-100 img-fluid"
                                         src={carouselPhoto.url}
                                         alt="First slide" />
-                                    <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </Carousel.Caption>
                                 </div>
                             </Carousel.Item>
                         )}
@@ -40,8 +36,8 @@ const DetailsDisplay = (props) => {
 
                     <Col className="d-flex flex-wrap justify-content-center">
                         {props.categories.map(mappedCat =>
-                            <div key={mappedCat.id}>
-                                <Card className="mt-3 mx-2 d-flex align-items-start" key={mappedCat.id}>
+                            <div key={mappedCat.id} >
+                                <Card className="mt-3 mx-2 align-items-start" key={mappedCat.id}>
                                     <Card.Img variant="top" src={mappedCat.url} className="img-fluid shadow-4-strong rounded-1" />
                                 </Card>
                             </div>
